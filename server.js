@@ -38,7 +38,7 @@ app.post("/webhook", async (req, res) => {
 
 // Función para enviar mensajes
 async function sendMessage(to, text) {
-    const url = `https://graph.facebook.com/v17.0/${phoneId}/messages`;
+    const url = `https://graph.facebook.com/v21.0/${phoneId}/messages`;
     
     await axios.post(
         url,
